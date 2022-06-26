@@ -1,0 +1,15 @@
+server:
+  port: 8181
+spring:
+  application:
+    name: palindrom-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/palindrome_db
+    username: postgres
+    password: admin
+    initialization-mode: always
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

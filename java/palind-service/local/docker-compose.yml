@@ -1,0 +1,11 @@
+version: '3'
+services:
+  palindrome_db:
+    build:
+      context: docker/.
+      dockerfile: palindrome.DockerFile
+    ports:
+        - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: palindrome_db

@@ -1,0 +1,6 @@
+[submodule "Frontend/angular/event-viewer/event-viewer-ui"]
+	path = Frontend/angular/event-viewer/event-viewer-ui
+	url = git@github.com:Win-key/event-viewer-ui.git
+[submodule "java/event-viewer-service"]
+	path = java/event-viewer-service
+	url = git@github.com:Win-key/event-viewer-service.git

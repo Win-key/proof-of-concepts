@@ -1,0 +1,13 @@
+.classpath
+.project
+.settings/
+/**/bin/
+
+*.classpath
+*.iml
+Google Dev API key/
+/**/target
+/**/credentials.json
+/**/service_user_creds.json
+/**/.idea/
+/**/mvn/
