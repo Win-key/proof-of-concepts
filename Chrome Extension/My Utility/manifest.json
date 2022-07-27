@@ -1,0 +1,33 @@
+{
+    "name": "My Utility",
+    "version": "0.1.0",
+    "description": "My general utility extension",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+        ],
+        "matches": ["https://*/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/utility_icon.png",
+        "24": "assets/utility_icon.png",
+        "32": "assets/utility_icon.png"
+      },
+      "default_title": "My Utility",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
